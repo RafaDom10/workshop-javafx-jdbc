@@ -10,17 +10,21 @@
             prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="gui.MainViewController">
     <VBox prefHeight="303.0" prefWidth="444.0">
-        <MenuBar>
-            <Menu mnemonicParsing="false" text="Registration">
-                <MenuItem fx:id="menuItemSeller" mnemonicParsing="false" onAction="#onMenuItemSellerAction"
-                          text="Seller"/>
-                <MenuItem fx:id="menuItemDepartment" mnemonicParsing="false"
-                          onAction="#onMenuItemDepartmentAction" text="Department"/>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Help">
-                <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" onAction="#onMenuItemAboutAction"
-                          text="About"/>
-            </Menu>
-        </MenuBar>
+        <children>
+            <MenuBar>
+                <menus>
+                    <Menu mnemonicParsing="false" text="Registration">
+                        <MenuItem fx:id="menuItemSeller" mnemonicParsing="false" onAction="#onMenuItemSellerAction"
+                                  text="Seller"/>
+                        <MenuItem fx:id="menuItemDepartment" mnemonicParsing="false"
+                                  onAction="#onMenuItemDepartmentAction" text="Department"/>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Help">
+                        <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" onAction="#onMenuItemAboutAction"
+                                  text="About"/>
+                    </Menu>
+                </menus>
+            </MenuBar>
+        </children>
     </VBox>
 </ScrollPane>
